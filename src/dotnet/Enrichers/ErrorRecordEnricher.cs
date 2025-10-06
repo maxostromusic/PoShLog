@@ -11,12 +11,7 @@ namespace PoShLog.Core.Enrichers
 
 		public bool DestructureObjects { get; }
 
-		public ErrorRecordEnricher()
-		{
-
-		}
-
-		public ErrorRecordEnricher(bool destructureObjects)
+		public ErrorRecordEnricher(bool destructureObjects = false)
 		{
 			DestructureObjects = destructureObjects;
 		}

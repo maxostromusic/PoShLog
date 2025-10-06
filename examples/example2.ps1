@@ -21,7 +21,7 @@ Write-FatalLog 'Test fatal message'
 try {
     ConvertFrom-Json 'asd'
 } catch {
-	Write-ErrorLog 'Error while converting fron json!' -ErrorRecord $_
+	Write-ErrorLog 'Error while converting from json!' -ErrorRecord $_
 }
 
 Close-Logger

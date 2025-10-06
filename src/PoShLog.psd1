@@ -12,7 +12,7 @@
 RootModule = 'PoShLog.psm1'
 
 # Version number of this module.
-ModuleVersion = '2.2.0'
+ModuleVersion = '3.0.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Desktop', 'Core'
@@ -117,7 +117,7 @@ PrivateData = @{
         IconUri = 'https://raw.githubusercontent.com/PoShLog/PoShLog/master/images/icons/poshlog-icon-256.png'
 
         # ReleaseNotes of this module
-        ReleaseNotes = 'https://github.com/PoShLog/PoShLog/blob/master/releaseNotes/v2.1.0.md'
+        ReleaseNotes = 'https://github.com/PoShLog/PoShLog/blob/master/releaseNotes/v3.0.0.md'
 
         # Prerelease string of this module
         # Prerelease = ''

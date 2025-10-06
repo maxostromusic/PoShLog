@@ -21,10 +21,6 @@ namespace PoShLog.Core.Exceptions
 			ErrorRecordWrapper = new ErrorRecordWrapper(errorRecord);
 		}
 
-		public WrapperException()
-		{
-		}
-
 		public override string ToString()
 		{
 			return InnerException?.ToString();

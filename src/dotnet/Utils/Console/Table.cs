@@ -46,15 +46,15 @@ namespace PoShLog.Core.Utils.Console
 		public void AddRow(params object[] values)
 		{
 			// In case there is multiline cell value we need to divide it into multiple rows
-			if (values.Any(v => v?.ToString().Contains(Environment.NewLine) ?? false))
+			if (values.Any(v => v?.ToString()?.Contains(Environment.NewLine) ?? false))
 			{
-				var maxLines = values.Max(v => v.ToString().Split('\n').Length);
+				var maxLines = values.Max(v => (v?.ToString() ?? string.Empty).Split('\n').Length);
 				for (int i = 0; i < maxLines; i++)
 				{
 					var row = new List<object>();
 					foreach (var value in values)
 					{
-						var valueLines = value.ToString().Split('\n');
+						var valueLines = (value?.ToString() ?? string.Empty).Split('\n');
 						if (i < valueLines.Length)
 						{
 							row.Add(valueLines[i].Replace("\r", ""));

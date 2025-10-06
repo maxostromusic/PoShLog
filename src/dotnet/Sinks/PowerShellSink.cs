@@ -31,9 +31,12 @@ namespace PoShLog.Core.Sinks
 				throw new ArgumentNullException(nameof(logEvent));
 			}
 
-			StringWriter strWriter = new StringWriter();
-			TextFormatter.Format(logEvent, strWriter);
-			string renderedMessage = strWriter.ToString();
+			string renderedMessage;
+			using (var strWriter = new StringWriter())
+			{
+				TextFormatter.Format(logEvent, strWriter);
+				renderedMessage = strWriter.ToString();
+			}
 
 			lock (_syncRoot)
 			{

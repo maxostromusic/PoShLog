@@ -8,7 +8,7 @@ namespace PoShLog.Core.Utils.Console
 		public int Index { get; }
 		public List<Cell> Cells { get; } = new List<Cell>();
 
-		public int MaxWidth => Cells.Max(c => c.Width);
+		public int MaxWidth => Cells.Count > 0 ? Cells.Max(c => c.Width) : 0;
 
 		public Column(int index)
 		{
