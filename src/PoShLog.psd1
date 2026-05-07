@@ -12,7 +12,7 @@
 RootModule = 'PoShLog.psm1'
 
 # Version number of this module.
-ModuleVersion = '3.0.0'
+ModuleVersion = '3.1.0'
 
 # Supported PSEditions
 CompatiblePSEditions = 'Desktop', 'Core'
@@ -73,12 +73,12 @@ PowerShellVersion = '5.1'
 # NestedModules = @()
 
 # Functions to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no functions to export.
-FunctionsToExport = 'Write-DebugLog', 'Write-ErrorLog', 'Write-FatalLog', 'Write-InfoLog', 
-               'Write-InformationLog', 'Write-VerboseLog', 'Write-WarningLog', 
-               'Close-Logger', 'New-LevelSwitch', 'New-Logger', 'Set-LevelSwitch', 
-               'Set-Logger', 'Set-MinimumLevel', 'Start-Logger', 
-               'Add-EnrichFromLogContext', 'Add-EnrichWithErrorRecord', 
-               'Add-EnrichWithProperty', 'Get-JsonFormatter', 'Convert-LogFunctions', 
+FunctionsToExport = 'Write-DebugLog', 'Write-ErrorLog', 'Write-FatalLog', 'Write-InfoLog',
+               'Write-InformationLog', 'Write-VerboseLog', 'Write-WarningLog',
+               'Close-Logger', 'New-LevelSwitch', 'New-Logger', 'Set-LevelSwitch',
+               'Set-Logger', 'Set-MinimumLevel', 'Start-Logger', 'Add-EnrichWith',
+               'Add-EnrichFromLogContext', 'Add-EnrichWithErrorRecord',
+               'Add-EnrichWithProperty', 'Get-JsonFormatter', 'Convert-LogFunctions',
                'Add-SinkConsole', 'Add-SinkFile', 'Add-SinkPowerShell'
 
 # Cmdlets to export from this module, for best performance, do not use wildcards and do not delete the entry, use an empty array if there are no cmdlets to export.
@@ -117,7 +117,7 @@ PrivateData = @{
         IconUri = 'https://raw.githubusercontent.com/PoShLog/PoShLog/master/images/icons/poshlog-icon-256.png'
 
         # ReleaseNotes of this module
-        ReleaseNotes = 'https://github.com/PoShLog/PoShLog/blob/master/releaseNotes/v3.0.0.md'
+        ReleaseNotes = 'https://github.com/PoShLog/PoShLog/blob/master/releaseNotes/v3.1.0.md'
 
         # Prerelease string of this module
         # Prerelease = ''

@@ -50,7 +50,7 @@ Describe "PoShLog-extended" {
 				Write-InfoLog 'Processed {@Position} in {Elapsed:000} ms.' -PropertyValues $position, $elapsedMs
 			} | Should -Not -Throw
 		}
-        
+
 		It "should close logger without throwing" {
 			{ Close-Logger } | Should -Not -Throw
 		}

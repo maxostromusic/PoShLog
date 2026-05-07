@@ -48,7 +48,7 @@ function Start-Logger {
 
 		[Parameter(Mandatory = $false, ParameterSetName = 'Short')]
 		[string]$FilePath,
-		
+
 		[Parameter(Mandatory = $false, ParameterSetName = 'Short')]
 		[Serilog.RollingInterval]$FileRollingInterval = [Serilog.RollingInterval]::Infinite,
 
@@ -80,7 +80,7 @@ function Start-Logger {
 		}
 
 		$logger = $LoggerConfig.CreateLogger()
-		
+
 		if($PassThru){
 			if($SetAsDefault){
 				[Serilog.Log]::Logger = $logger
