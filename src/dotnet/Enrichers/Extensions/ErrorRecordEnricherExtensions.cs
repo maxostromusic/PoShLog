@@ -5,9 +5,9 @@ namespace PoShLog.Core.Enrichers.Extensions
 {
 	public static class ErrorRecordEnricherExtensions
 	{
-		public static LoggerConfiguration WithErrorRecord(this LoggerEnrichmentConfiguration loggerConfiguration, bool desctructureObjects = false)
+		public static LoggerConfiguration WithErrorRecord(this LoggerEnrichmentConfiguration loggerConfiguration, bool destructureObjects = false)
 		{
-			return loggerConfiguration.With(new ErrorRecordEnricher(desctructureObjects));
+			return loggerConfiguration.With(new ErrorRecordEnricher(destructureObjects));
 		}
 	}
 }

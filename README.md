@@ -139,6 +139,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ## Release Notes
 
+* [v3.1.1](releaseNotes/v3.1.1.md)
 * [v3.1.0](releaseNotes/v3.1.0.md)
 * [v3.0.0](releaseNotes/v3.0.0.md)
 * [v2.1.1](releaseNotes/v2.1.1.md)
